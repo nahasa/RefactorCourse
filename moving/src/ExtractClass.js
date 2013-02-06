@@ -5,11 +5,11 @@ function Dni(aDNI) {
     this.DNI = ''; 
 
 	this.validateDNI=function(aDNI){
-        if (this.perfectMatch(aDNI)) return true
+        if (this.checkLetter(aDNI)) return true
 		throw this.ERROR_MESSAGE;
 	};
 
-    this.perfectMatch = function(aDNI){
+    this.checkLetter= function(aDNI){
         if (this. getLetter(aDNI) === this.VALID_CARACTER) return true
     };   
 
